@@ -8,7 +8,6 @@ def syntaxtree(rule: tuple, depth=0):
     children = rule[1]
     indent = "     "
     output = ""
-    
     output += indent*depth + "(" + label + "\n"
     for child in children:
         if isinstance(child, tuple):
