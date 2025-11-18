@@ -18,6 +18,7 @@ def syntaxtree(rule: tuple, depth=0):
     output += indent*depth + ")"
     return output
 
+# print syntaxtree
 def pst(rule:tuple):
     print(syntaxtree(rule))
 
@@ -58,7 +59,7 @@ def gen_sen(rule: tuple):
 def pr_sen(rule: tuple):
     print(gen_sen(rule))
 
-# generated sentence with bracket structure
+# generate sentence with bracket structure
 def gen_brac(rule: tuple):
     label = rule[0]
     children = rule[1]
